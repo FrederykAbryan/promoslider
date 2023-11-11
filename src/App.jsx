@@ -1,6 +1,3 @@
-import { Fragment, useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import promo1 from "/img/promo1.jpeg";
 import promo2 from "/img/promo2.jpeg";
 import promo3 from "/img/promo3.jpeg";
@@ -13,7 +10,6 @@ import promo9 from "/img/promo9.jpeg";
 import promo10 from "/img/promo10.jpeg";
 import promo11 from "/img/promo11.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -46,24 +42,38 @@ const images = [
 function App() {
   return (
     <>
-      <Swiper
-        rewind={true}
-        navigation={true}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-        {images?.map((val) => {
-          return (
-              <div key={val+2} style={{ maxWidth: "500px", height: "100%" }}>
+      <div className="d-flex justify-content-center col col-lg-12">
+        <Swiper
+          rewind={true}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 80 },
+            480: { slidesPerView: 1, spaceBetween: 150 },
+            768: { slidesPerView: 1, spaceBetween: 50 },
+            1024: { slidesPerView: 1, spaceBetween: 150 },
+          }}
+          freeMode
+          centeredSlides
+          grabCursor
+          centeredSlidesBounds
+          // modules={[FreeMode, Scrollbar]}
+        >
+          {images?.map((val) => {
+            return (
+              <div key={val + 2} style={{ maxWidth: "500px", height: "100%" }}>
                 <SwiperSlide key={val}>
-                  <img 
-                  src={val} 
-                  style={{ maxWidth: "500px", height: "100%" }}/>
+                  <img
+                    src={val}
+                    style={{ maxWidth: "500px", height: "100%" }}
+                  />
                 </SwiperSlide>
               </div>
-          );
-        })}
-      </Swiper>
+            );
+          })}
+        </Swiper>
+      </div>
     </>
   );
 }
