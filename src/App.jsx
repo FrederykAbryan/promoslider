@@ -42,7 +42,7 @@ const images = [
 function App() {
   return (
     <>
-      <div className="d-flex justify-content-center col col-lg-12">
+      <div className="d-flex justify-content-center col col-lg-12" style={{maxWidth: "400px"}}>
         <Swiper
           rewind={true}
           navigation={true}
@@ -56,11 +56,11 @@ function App() {
         >
           {images?.map((val) => {
             return (
-              <div key={val + 2} style={{ maxWidth: "500px", height: "100%" }}>
+              <div key={val + 2}>
                 <SwiperSlide key={val}>
                   <img
                     src={val}
-                    style={{ maxWidth: "500px", height: "100%" }}
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </SwiperSlide>
               </div>
