@@ -42,31 +42,33 @@ const images = [
 function App() {
   return (
     <>
-      <div className="d-flex justify-content-center col col-lg-12" style={{maxWidth: "400px"}}>
-        <Swiper
-          rewind={true}
-          navigation={true}
-          modules={[Navigation]}
-          className="mySwiper"
-          freeMode
-          centeredSlides
-          grabCursor
-          centeredSlidesBounds
-          // modules={[FreeMode, Scrollbar]}
+      <div className="container-fluid">
+        <div
+          className="d-flex justify-content-center col col-lg-12 overflow-auto"
+          style={{ maxWidth: "700px" }}
         >
-          {images?.map((val) => {
-            return (
-              <div key={val + 2}>
-                <SwiperSlide key={val}>
-                  <img
-                    src={val}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </SwiperSlide>
-              </div>
-            );
-          })}
-        </Swiper>
+          <Swiper
+            rewind={true}
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper"
+            freeMode
+            centeredSlides
+            grabCursor
+            centeredSlidesBounds
+            // modules={[FreeMode, Scrollbar]}
+          >
+            {images?.map((val) => {
+              return (
+                <div key={val + 2}>
+                  <SwiperSlide key={val}>
+                    <img src={val} style={{ width: "100%", height: "auto" }} />
+                  </SwiperSlide>
+                </div>
+              );
+            })}
+          </Swiper>
+        </div>
       </div>
     </>
   );
