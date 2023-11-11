@@ -42,7 +42,7 @@ const images = [
 function App() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid" style={{ maxWidth: "100vh" }}>
         <div
           className="d-flex justify-content-center col col-lg-12 overflow-auto"
           style={{ maxWidth: "700px" }}
