@@ -48,12 +48,6 @@ function App() {
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 80 },
-            480: { slidesPerView: 1, spaceBetween: 150 },
-            768: { slidesPerView: 1, spaceBetween: 50 },
-            1024: { slidesPerView: 1, spaceBetween: 150 },
-          }}
           freeMode
           centeredSlides
           grabCursor
