@@ -1,10 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Nav";
 
 function Navbars() {
   return (
-    <Navbar
+    <Nav
       fill
       variant="tabs"
       style={{ minWidth: "100%" }}
@@ -23,7 +22,7 @@ function Navbars() {
         </Nav>
         {/* </Navbar.Collapse> */}
       </Container>
-    </Navbar>
+    </Nav>
   );
 }
 
