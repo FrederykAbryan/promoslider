@@ -22,8 +22,8 @@ const Promo = () => {
           <div className="container d-flex justify-content-center" style={{ maxWidth: "100vh" }}>
             <div className="row">
               <div
-                className="d-flex col col-12"
-                style={{ maxWidth: "45rem", minWidth: "40vh" }}
+                className="d-flex col col-lg-12"
+                style={{ maxWidth: "24rem", minWidth: "10vh" }}
               >
                 <Swiper
                   rewind={true}
