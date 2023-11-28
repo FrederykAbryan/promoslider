@@ -34,7 +34,7 @@ const Program = () => {
                       <div key={val + 2}>
                         <SwiperSlide key={val}>
                           <img
-                            className="vh-auto"
+                            className="vh-auto img-fluid"
                             src={val}
                             style={{ width: "100%"}}
                           />
