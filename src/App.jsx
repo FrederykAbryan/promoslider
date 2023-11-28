@@ -12,7 +12,8 @@ function App() {
         <Navbars />
         <Routes>
           <Route path="/" element={<Promo />} />
-          <Route path="/about" element={<Program />} />
+          <Route path="/promo" element={<Promo />} />
+          <Route path="/program" element={<Program />} />
         </Routes>
       </Router>
     </main>

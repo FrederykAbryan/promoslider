@@ -15,10 +15,10 @@ function Navbars() {
       <Container>
         <Nav fill variant="tabs" activeKey={location.pathname} className="me-auto">
           <Nav.Item>
-            <Nav.Link href="/">Promo</Nav.Link>
+            <Nav.Link href="/promo">Promo</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/about">Program</Nav.Link>
+            <Nav.Link href="/program">Program</Nav.Link>
           </Nav.Item>
         </Nav>
         {/* </Navbar.Collapse> */}
