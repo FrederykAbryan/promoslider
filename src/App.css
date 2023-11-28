@@ -8,6 +8,6 @@
 
 @media screen and (max-width: 576px) {
   #root {
-    max-width: fit-content;
+    max-width: 100% !important;
   }
 }
