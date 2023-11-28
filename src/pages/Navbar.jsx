@@ -1,21 +1,27 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Nav";
 
 function Navbars() {
   return (
-    <Navbar style={{minWidth:"100%"}} expand="lg" bg="blue" className="bg-body-tertiary">
+    <Navbar
+      fill
+      variant="tabs"
+      style={{ minWidth: "100%" }}
+      expand="lg"
+      bg="blue"
+      className="bg-body-tertiary"
+    >
       <Container>
-        <Navbar.Brand href="/">E.A.P</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav activeKey={location.pathname} className="me-auto">
-            {/* <NavLink to="/"> Promo </NavLink>
-            <NavLink to="/about"> Program </NavLink> */}
+        <Nav fill variant="tabs" activeKey={location.pathname} className="me-auto">
+          <Nav.Item>
             <Nav.Link href="/">Promo</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <Nav.Link href="/about">Program</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+          </Nav.Item>
+        </Nav>
+        {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );

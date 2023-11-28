@@ -3,6 +3,7 @@ import "./App.css";
 import Navbars from "./pages/Navbar";
 import Promo from "./pages/Promo";
 import Program from "./pages/Program";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
