@@ -15,7 +15,7 @@ const Program = () => {
           <div className="d-flex justify-content-center container-fluid" style={{ maxWidth: "100vh"}}>
             <div className="row">
               <div
-                className="d-flex col col-lg-12 overflow-auto"
+                className="d-flex col col-12 overflow-auto"
                 style={{ maxWidth: "45rem", minWidth: "40vh" }}
               >
                 <Swiper
