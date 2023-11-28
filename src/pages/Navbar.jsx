@@ -16,10 +16,10 @@ function Navbars() {
         <Navbar.Brand href="/">E.A.P</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav activeKey={location.pathname} className="me-auto">
+          {/* <Nav activeKey={location.pathname} className="me-auto">
             <Nav.Link href="/promo">Promo</Nav.Link>
             <Nav.Link href="/program">Program</Nav.Link>
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
