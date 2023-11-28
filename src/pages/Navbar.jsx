@@ -7,7 +7,7 @@ function Navbars() {
     expand="lg"
     style={{
       // minHeight: "2rem",
-      marginBottom: "10rem",
+      marginBottom: "5rem",
       fontSize: "2rem",
     }} 
     className="bg-body-tertiary mb-20"

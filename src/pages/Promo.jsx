@@ -19,7 +19,7 @@ const images = [
 const Promo = () => {
     return (
         <>
-          <div className="d-flex justify-content-center container-fluid my-15" style={{ maxWidth: "100vh" }}>
+          <div className="d-flex justify-content-center" style={{ maxWidth: "100vh" }}>
             <div className="row">
               <div
                 className="d-flex col col-12"
