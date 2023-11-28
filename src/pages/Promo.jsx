@@ -4,57 +4,53 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const images = [
-    "img/promo1.jpeg",
-    "img/promo2.jpeg",
-    "img/promo3.jpeg",
-    "img/promo4.jpeg",
-    "img/promo5.jpeg",
-    "img/promo6.jpeg",
-    "img/promo7.jpeg",
-    "img/promo8.jpeg",
-    "img/promo9.jpeg",
-    "img/promo10.jpeg",
-    "img/promo11.jpeg",
-  ];
+  "img/promo1.jpeg",
+  "img/promo2.jpeg",
+  "img/promo3.jpeg",
+  "img/promo4.jpeg",
+  "img/promo5.jpeg",
+  "img/promo6.jpeg",
+  "img/promo7.jpeg",
+  "img/promo8.jpeg",
+  "img/promo9.jpeg",
+  "img/promo10.jpeg",
+  "img/promo11.jpeg",
+];
 const Promo = () => {
-    return (
-        <>
-          <div className="container d-flex justify-content-center" style={{ maxWidth: "100vh" }}>
-            <div className="row">
-              <div
-                className="d-flex col col-lg-12"
-                style={{ maxWidth: "24rem", minWidth: "10vh" }}
-              >
-                <Swiper
-                  rewind={true}
-                  navigation={true}
-                  modules={[Navigation]}
-                  className="mySwiper"
-                  freeMode
-                  centeredSlides
-                  grabCursor
-                  centeredSlidesBounds
-                  // modules={[FreeMode, Scrollbar]}
-                >
-                  {images?.map((val) => {
-                    return (
-                      <div key={val + 2}>
-                        <SwiperSlide key={val}>
-                          <img
-                            className="vh-auto img-fluid"
-                            src={val}
-                            style={{ width: "100%"}}
-                          />
-                        </SwiperSlide>
-                      </div>
-                    );
-                  })}
-                </Swiper>
+  return (
+    <>
+      <div
+        className="container d-flex justify-content-center"
+        style={{ maxWidth: "100vh" }}
+      >
+        <Swiper
+          rewind={true}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+          freeMode
+          centeredSlides
+          grabCursor
+          centeredSlidesBounds
+          // modules={[FreeMode, Scrollbar]}
+        >
+          {images?.map((val) => {
+            return (
+              <div key={val + 2}>
+                <SwiperSlide key={val}>
+                  <img
+                    className="vh-auto img-fluid"
+                    src={val}
+                    style={{ width: "100%" }}
+                  />
+                </SwiperSlide>
               </div>
-            </div>
-          </div>
-        </>
-      );
-}
+            );
+          })}
+        </Swiper>
+      </div>
+    </>
+  );
+};
 
-export default Promo
+export default Promo;
