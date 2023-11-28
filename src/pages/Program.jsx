@@ -12,7 +12,7 @@ const images = [
 const Program = () => {
     return (
         <>
-          <div className="d-flex justify-content-center container-fluid" style={{ maxWidth: "100vh"}}>
+          <div className="container d-flex justify-content-center container-fluid" style={{ maxWidth: "100vh"}}>
             <div className="row">
               <div
                 className="d-flex col col-12 overflow-auto"
