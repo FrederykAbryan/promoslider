@@ -19,11 +19,11 @@ const images = [
 const Promo = () => {
     return (
         <>
-          <div className="container-fluid" style={{ maxWidth: "100vh" }}>
+          <div className="d-flex justify-content-center container-fluid my-15" style={{ maxWidth: "100vh" }}>
             <div className="row">
               <div
                 className="d-flex col col-lg-12 overflow-auto"
-                style={{ maxWidth: "92rem" }}
+                style={{ maxWidth: "45rem", minWidth: "40vh" }}
               >
                 <Swiper
                   rewind={true}
