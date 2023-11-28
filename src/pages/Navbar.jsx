@@ -4,7 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Navbars() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary mb-20">
+    <Navbar 
+    expand="lg"
+    style={{
+      // minHeight: "2rem",
+      fontSize: "2rem",
+    }} 
+    className="bg-body-tertiary mb-20"
+    >
       <Container>
         <Navbar.Brand href="/">E.A.P</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
