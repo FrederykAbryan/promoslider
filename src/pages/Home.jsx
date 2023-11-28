@@ -7,7 +7,7 @@ const Home = () => {
       <div className="d-flex justify-content-center">
         <div className="col col-lg-6 d-flex justify-content-center">
           <Card style={{ width: "18rem", alignItems:"center" }}>
-            <Card.Img variant="top" src="https://www.btn.co.id/-/media/User-Defined/Identitas-Perusahaan/02_BTN_MasterBrand.jpg?la=id" />
+            <Card.Img className="img-fluid" variant="top" src="https://www.btn.co.id/-/media/User-Defined/Identitas-Perusahaan/02_BTN_MasterBrand.jpg?la=id" />
             <Card.Body>
               <Card.Title>Promo</Card.Title>
               {/* <Card.Text>
