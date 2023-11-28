@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  img {
-    width: 50% !important;
+  #root {
+    max-width: fit-content;
   }
 }
