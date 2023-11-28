@@ -1,5 +1,4 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 function Navbars() {
@@ -8,6 +7,7 @@ function Navbars() {
     expand="lg"
     style={{
       // minHeight: "2rem",
+      marginBottom: "10rem",
       fontSize: "2rem",
     }} 
     className="bg-body-tertiary mb-20"
